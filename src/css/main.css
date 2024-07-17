@@ -1,3 +1,236 @@
-h1{
-    color: red;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  /*Fonts*/
+  --font-headers: "Mochiy Pop One", sans-serif;
+  --font-paragraph: "Poppins", sans-serif;
+
+  /*Colors*/
+  --white-100: #ffffff;
+
+  --blue-500: #122743;
+  --blue-700: #132743;
+
+  --gray-100: #88909d;
+  --gray-300: #596477;
+}
+
+/*Start Navbar and Home Page*/
+.home .container {
+  background-image: url(/Tincture-Ecommerce/src/images/bg/concentric_bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  padding: 40px 120px;
+  overflow: hidden;
+}
+
+.home .container .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home .container nav {
+  flex: 1;
+  text-align: right;
+}
+
+.home .container nav ul {
+  margin-top: -20px;
+}
+
+.home .container nav ul li{
+    display: inline-block;
+    margin-right: 22px;
+}
+
+.home .container .cart-icon{
+    width: 33px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.home .container a:not(.navbar-logo, .shop-now-btn a):hover{
+    /* opacity: 60%; */
+    color: #40edb8;
+    transition: all ease 0.3s;
+}
+
+.home .container nav ul li a{
+    color: var(--blue-700);
+    font-weight: 500;
+}
+
+.home .container .navbar{
+    height: 10%;
+    /* border: 2px solid red; */
+}
+
+.home .container .navbar-logo img{
+    height: 210px;
+}
+
+.home .home-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home .home-content-left{
+    /* border: red 2px solid; */
+    width: 55%;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+}
+
+.home .home-content-left h1{
+    font-size: 3.7rem;
+    font-weight: 700;
+    line-height: 70px;
+    margin: 20px 0;
+    text-align: start;
+    color: var(--blue-500);
+}
+
+.home .home-content-left p{
+    font-size: 1rem;
+    line-height: 35px;
+    color: var(--gray-300);
+    text-align:left;
+}
+
+.home .home-content-left .shop-now-btn{
+    margin-top: 30px;
+}
+.home .home-content-left .shop-now-btn .button{
+    color: var(--white-100);
+    background: #8fa894; /*#8fa894 40edb8*/
+    padding: 8px 30px;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.home .home-content-left .shop-now-btn .button:hover {
+    opacity: 80%;
+}
+
+.home .home-content-right{
+    /* border: red 2px solid; */
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.home .home-content-right .woman{
+    height: 100%;
+    width: 80%;
+    min-width: 500px;
+    max-height: 830px;
+}
+
+.home-content-right .blob {
+    position: absolute;
+    top: 0; /* Position blob at the bottom of the container */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center alignment adjustment */
+    z-index: 1; /* Ensure blob is behind the woman image */
+    width: 900px;
+}
+
+.home-content-right .woman {
+    position: relative; /* Ensure woman image is on top */
+    display: block; /* Ensure block display to push blob below */
+    z-index: 2; /* Ensure woman image is in front */
+}
+
+/*End Navbar and Home Page*/
+
+
+
+
+/* .home-container {
+    background-image: url(/Tincture-Ecommerce/src/images/bg/concentric_bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    padding: 40px 120px;
+    position: relative;
+}
+
+.home-container nav {
+  flex: 1;
+  text-align: right;
+}
+
+.home-container nav ul{
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.home-container nav ul li{
+    display: inline-block;
+    margin-right: 22px;
+}
+
+.home-container .cart-icon{
+    width: 33px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.home-container a:not(.navbar-logo a):hover{
+    opacity: 60%;
+    transition: all ease 0.3s;
+}
+
+.home-container nav ul li a{
+    color: var(--blue-700);
+    font-weight: 500;
+}
+
+.home-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center; 
+    z-index: 1;
+  } */
+
+@media screen and (max-width: 1024px) {
+  .home .container {
+    padding: 40px 60px;
+  }
 }
