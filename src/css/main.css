@@ -30,7 +30,7 @@ html {
   --gray-300: #596477;
 }
 
-/*Start Navbar and Home Page*/
+/*Start Navbar Section*/
 .home .container {
   background-image: url(/Tincture-Ecommerce/src/images/bg/concentric_bg.png);
   background-size: cover;
@@ -39,13 +39,14 @@ html {
   width: 100%;
   height: 100vh;
   padding: 40px 120px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .home .container .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* background-color: red; */
 }
 
 .home .container nav {
@@ -53,181 +54,187 @@ html {
   text-align: right;
 }
 
-.home .container nav ul {
-  margin-top: -20px;
+/* .home .container nav ul {
+
+} */
+
+.home .container nav ul li {
+  display: inline-block;
+  margin-right: 22px;
 }
 
-.home .container nav ul li{
-    display: inline-block;
-    margin-right: 22px;
+.home .container .cart-icon {
+  width: 33px;
+  height: auto;
+  margin-bottom: 5px;
 }
 
-.home .container .cart-icon{
-    width: 33px;
-    height: auto;
-    margin-bottom: 25px;
+.home .container a:not(.navbar-logo a, .shop-now-btn a):hover {
+  /* opacity: 60%; */
+  color: #40edb8;
+  transition: all ease 0.3s;
+  filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5)); 
 }
 
-.home .container a:not(.navbar-logo, .shop-now-btn a):hover{
-    /* opacity: 60%; */
-    color: #40edb8;
-    transition: all ease 0.3s;
+.home .container nav ul li a {
+  color: var(--blue-700);
+  font-weight: 500;
 }
 
-.home .container nav ul li a{
-    color: var(--blue-700);
-    font-weight: 500;
+.home .container .navbar {
+  height: 10%;
+  /* border: 2px solid red; */
 }
 
-.home .container .navbar{
-    height: 10%;
-    /* border: 2px solid red; */
+.home .container .navbar-logo{
+    height: 100px;
 }
-
 .home .container .navbar-logo img{
-    height: 210px;
+    width: auto;
+    height: 110%;
 }
 
-.home .home-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+
+/*End Navbar Section*/
+
+/*Home Content Section*/
+
+.home .home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* border: red 2px solid; */
 }
 
-.home .home-content-left{
-    /* border: red 2px solid; */
-    width: 55%;
-    /* display: flex;
+.home .home-content-left {
+  /* border: red 2px solid; */
+  width: 55%;
+  /* display: flex;
     flex-direction: column;
     flex-wrap: wrap; */
+    
+  margin-top: 40px;
 }
 
-.home .home-content-left h1{
-    font-size: 3.7rem;
-    font-weight: 700;
-    line-height: 70px;
-    margin: 20px 0;
-    text-align: start;
-    color: var(--blue-500);
+.home .home-content-left h1 {
+  font-size: 3.7rem;
+  font-weight: 700;
+  line-height: 70px;
+  margin: 20px 0;
+  text-align: start;
+  color: var(--blue-500);
 }
 
-.home .home-content-left p{
-    font-size: 1rem;
-    line-height: 35px;
-    color: var(--gray-300);
-    text-align:left;
+.home .home-content-left p {
+  font-size: 1rem;
+  line-height: 35px;
+  color: var(--gray-300);
+  text-align: left;
 }
 
-.home .home-content-left .shop-now-btn{
-    margin-top: 30px;
+.home .home-content-left .shop-now-btn {
+  margin-top: 30px;
 }
-.home .home-content-left .shop-now-btn .button{
-    color: var(--white-100);
-    background: #8fa894; /*#8fa894 40edb8*/
-    padding: 8px 30px;
-    border-radius: 40px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.home .home-content-left .shop-now-btn .button {
+  color: var(--white-100);
+  background: #8fa894; /*#8fa894 40edb8*/
+  padding: 8px 30px;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .home .home-content-left .shop-now-btn .button:hover {
-    opacity: 80%;
+  opacity: 80%;
 }
 
-.home .home-content-right{
-    /* border: red 2px solid; */
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+.home .home-content-right {
+  /* border: red 2px solid; */
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 10px;
 }
 
-.home .home-content-right .woman{
-    height: 100%;
-    width: 80%;
-    min-width: 500px;
-    max-height: 830px;
-}
-
-.home-content-right .blob {
+.home .home-content-right .blob {
+    width: 100%;
+    height: auto;
+    /* max-width: 1200px; */
+    min-width: 370px;
+    min-height: 500px;
+    overflow: hidden;
+  }
+  
+  .home .home-content-right .woman {
     position: absolute;
-    top: 0; /* Position blob at the bottom of the container */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center alignment adjustment */
-    z-index: 1; /* Ensure blob is behind the woman image */
-    width: 900px;
-}
+    top: 0;
+    left: 30px;
+    width: 90%;
+    height: 95%;
+    mask-image: url(/Tincture-Ecommerce/src/images/icons/home_blob-dual.png);
+    mask-size: cover;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url(/Tincture-Ecommerce/src/images/icons/home_blob-dual.png);
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    overflow: hidden; 
+  }
 
-.home-content-right .woman {
-    position: relative; /* Ensure woman image is on top */
-    display: block; /* Ensure block display to push blob below */
-    z-index: 2; /* Ensure woman image is in front */
-}
+
+/*End Home Section*/
+
+
+/* 
+/CAN OVERFLOW THE WOMAN IMAGE/
+.home .home-content-right .blob {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    position: relative;
+  }
+  
+  .home .home-content-right .woman-container {
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    overflow: hidden;
+    mask-image: url(/Tincture-Ecommerce/src/images/icons/home_blob-dual.png);
+    mask-size: cover;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url(/Tincture-Ecommerce/src/images/icons/home_blob-dual.png);
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+  }
+  
+  .home .home-content-right .woman {
+    position: relative;
+    top: 50px; 
+    width: 100%;
+    height: auto;
+  } */
+
+
+
 
 /*End Navbar and Home Page*/
 
 
 
 
-/* .home-container {
-    background-image: url(/Tincture-Ecommerce/src/images/bg/concentric_bg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
 
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-between;
-    padding: 40px 120px;
-    position: relative;
-}
 
-.home-container nav {
-  flex: 1;
-  text-align: right;
-}
 
-.home-container nav ul{
-    display: inline-block;
-    list-style-type: none;
-    text-decoration: none;
-    margin-top: 20px;
-}
-.home-container nav ul li{
-    display: inline-block;
-    margin-right: 22px;
-}
 
-.home-container .cart-icon{
-    width: 33px;
-    height: auto;
-    margin-top: 10px;
-}
-
-.home-container a:not(.navbar-logo a):hover{
-    opacity: 60%;
-    transition: all ease 0.3s;
-}
-
-.home-container nav ul li a{
-    color: var(--blue-700);
-    font-weight: 500;
-}
-
-.home-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: start;
-    align-items: center; 
-    z-index: 1;
-  } */
 
 @media screen and (max-width: 1024px) {
   .home .container {
