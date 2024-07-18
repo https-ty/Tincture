@@ -91,9 +91,20 @@ html {
 }
 .home .container .navbar-logo img{
     width: auto;
-    height: 110%;
+    height: 100%;
 }
 
+
+/*Hamburger*/
+.home .container .navbar .icons{
+    font-size: 2rem;
+    color: var(--blue-700);
+    cursor: pointer;
+    display: none;
+
+    position: absolute;
+    right: 5%;
+}
 
 /*End Navbar Section*/
 
@@ -114,7 +125,7 @@ html {
     flex-direction: column;
     flex-wrap: wrap; */
     
-  margin-top: 40px;
+  margin-top: 100px;
 }
 
 .home .home-content-left h1 {
@@ -240,4 +251,80 @@ html {
   .home .container {
     padding: 40px 60px;
   }
+}
+
+@media screen and (max-width: 868px){
+    .home .home-content-left{
+        flex: 1;
+        /* margin-top: 150px; */
+    }
+
+    .home .home-content-right{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .home .container{
+        padding: 40px 20px;
+    }
+      
+    /* .home .container .navbar-logo{
+        height: 90px;
+    }
+
+    .home .container .cart-icon{
+        position: absolute;
+        top: 25px;
+        right: 90px;
+    }
+
+    
+    .home .container .navbar .icons{
+        display: inline-flex;
+    }
+
+    .home .container .navbar{
+        position: absolute;
+        top: -1%;
+        width: 95%;
+        margin-top: 20px;
+        padding: 20px 0px;
+        background: red;
+    }
+
+    .home .container .navbar a{
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: c;
+    } */
+
+    .home .home-content-left{
+        margin-top: 95px;
+    }
+
+}
+
+@media screen and (max-width: 425px){
+    .home .home-content-left h1{
+        font-size: 3.2rem;
+    }
+
+    .home .home-content-left p{
+        font-size: .8rem;
+    }
+
+    .home .home-content-left{
+        margin-top: 20px;
+    }
+
+    .home .home-content-left .shop-now-btn {
+        margin-top: 8px;
+      }
+      .home .home-content-left .shop-now-btn .button {
+        padding: 5px 15px;
+        border-radius: 30px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
 }
