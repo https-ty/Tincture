@@ -25,36 +25,37 @@
   </head>
 
   <body>
+
     <!--Home Section-->
     <section class="home">
       <div class="container">
-        <div class="navbar">
-          <div class="navbar-logo">
-            <a href="#"><img src="images/logo/navbar-logos.png" alt="" /></a>
-          </div>
 
-          <!-- Hamburger Menu Toggle -->
-           <label for="" class="icons">
-            <i class="fa-solid fa-bars"></i>
-           </label>
+        <!--Navbar-->
+        <header class="header" id="header">
+          <!--Tincture Logo-->
+          <a href="#"><img src="images/logo/navbar-logos.png" class="logo" alt="Tincture Logo" /></a>
+          
+          <!--Hamburger-->
+          <input type="checkbox" id="check"> 
+          <label for="check" class="hamburger">
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+            <!-- <i class="fa-solid fa-x" id="close-icon"></i> -->
+            <i class="fa-solid fa-xmark" id="close-icon"></i>
+          </label>
+          <!--Nav Links-->
+          <nav class="navbar">
+              <a href="#" style="--i:0">Home</a>
+              <a href="#" style="--i:1">Services</a>
+              <a href="#" style="--i:2">About</a>
+              <a href="#" style="--i:3">Product</a>
+              <a href="#" style="--i:4">Reviews</a>
+              <a href="#" style="--i:5">Contact</a>
 
-          <!-- Navigation Links -->
-          <nav class="menu">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Product</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Reviews</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
+              <!-- Cart Icon -->
+          <!-- <a href="#"><img src="images/icons/navbar-cart.png" class="cart-icon"/></a> -->
           </nav>
-
-          <!--Cart Icon-->
-          <a href="#"
-            ><img src="images/icons/navbar-cart.png" class="cart-icon"
-          /></a>
-        </div>
+        </header>
+        <!--End Nav Bar-->
 
         <!--Home Content Section-->
         <div class="home-content">
