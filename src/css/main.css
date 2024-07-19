@@ -9,6 +9,7 @@
   text-decoration: none;
   outline: none;
   font-family: "Poppins", sans-serif;
+  transition: width 0.3s ease, padding 0.3s ease;
 }
 
 html {
@@ -45,23 +46,26 @@ html {
   /* overflow: hidden; */
 }
 
-.home .container .header {
-  position: sticky;
-  top: 0;
+.header {
+  position: fixed;
+  top: 5%;
   left: 0;
   width: 100%;
   height: 80px;
   padding: 1.3rem;
   /* background-color: red; */
+  /* background-color: rgba(255, 255, 255, 0.8); */
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  border-radius: 8px;
+  border-radius: 4px;
+  padding: 40px 120px;
+  transition: 0.3s ease;
 }
 
-.home .container .header::before{
-  content: '';
+.header::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -71,21 +75,28 @@ html {
   z-index: -1;
 }
 
-.home .container .header .logo {
+.header .logo {
   height: 80px;
   width: auto;
 }
 
-.home .container .header.scrolled {
-  top: 15px;
-  background-color: rgba(0, 0, 0, 0.2);
+.header.scrolled {
+  top: 0;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
-.home .container .header .navbar a {
+.header .navbar a {
   font-size: 1rem;
   font-weight: 500;
   color: var(--blue-700);
   margin-left: 2.5rem;
+  transition: 0.3s ease;
+}
+
+.header .navbar a:hover {
+  color: var(--green-300);
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
 }
 
 /* .home .container .cart-icon{
@@ -94,7 +105,7 @@ html {
   
 } */
 
-.home .container .header .hamburger {
+.header .hamburger {
   position: absolute;
   right: 5%;
   font-size: 2.2rem;
@@ -103,10 +114,9 @@ html {
   display: none;
 }
 
-.home .container .header #check{
+.header #check {
   display: none;
 }
-
 
 /*End Navbar Section*/
 
@@ -117,6 +127,7 @@ html {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 90px;
   /* border: red 2px solid; */
 }
 
@@ -170,6 +181,7 @@ html {
   align-items: center;
   position: relative;
   top: 10px;
+  transition: 0.3s ease;
 }
 
 .home .home-content-right .blob {
@@ -237,17 +249,68 @@ html {
 
 /*End Navbar and Home Page*/
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   /*Home Section*/
   .home .container {
     padding: 40px 60px;
   }
 
-  /*End Home Section*/
-}
+  .header{
+    /* border: 2px solid red; */
+    padding: 20px 30px;
+    transition: 0.3s ease;
+  }
 
-@media screen and (max-width: 868px) {
-  /*Home Section*/
+  .header .hamburger {
+    display: inline-flex;
+  }
+  .header #check:checked ~ .hamburger #menu-icon {
+    display: none;
+  }
+
+  .header #check:checked ~ .hamburger #close-icon {
+    display: block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: var(--green-300);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: 0.3s ease;
+  }
+
+  .header #check:checked ~ .navbar {
+    height: 20rem;
+  }
+
+  .header .navbar a {
+    display: block;
+    margin: 1.5rem 0;
+    text-align: center;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+
+  .header .navbar a:hover{
+    color: var(--green-100)
+  }
+
+  .header #check:checked ~ .navbar a {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: calc(0.12s * var(--i));
+  }
+
+  .header .hamburger #close-icon {
+    display: none;
+  }
+
   .home .home-content-left {
     flex: 1;
     /* margin-top: 150px; */
@@ -255,7 +318,10 @@ html {
 
   .home .home-content-right {
     display: none;
+    transition: 0.3s ease-in-out;
   }
+
+
   /*End Home Section*/
 }
 
@@ -265,54 +331,12 @@ html {
     padding: 40px 20px;
   }
 
-  .home .container .header .hamburger{
-    display: inline-flex;
-  }
-  .home .container .header #check:checked~.hamburger #menu-icon{
-    display: none;
-  }
-
-  .home .container .header #check:checked~.hamburger #close-icon{
-    display: block;
-  }
-
-  .home .container .header .navbar{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background-color: var(--green-300);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    overflow: hidden;
-    transition: .3s ease;
-  }
-  
-  .home .container .header #check:checked~.navbar{
-    height: 80vh;
-  }
-
-  .home .container .header .navbar a{
-    display: block;
-    margin: 5rem 0;
-    text-align: center;
-    transform: translateY(-50px);
-    opacity: 0;
-    transition: .3s ease;
-  }
-
-  .home .container .header #check:checked~.navbar a{
-    transform: translateY(0);
-    opacity: 1;
-    transition-delay: calc(.12s * var(--i));
-  }
-
-  .home .container .header .hamburger #close-icon{
-    display: none;
-  }
-
-  .home .home-content-left {
+  /* .home .home-content-left {
     margin-top: 95px;
+  } */
+  .home .home-content-left {
+    margin-top: 20px;
+    transition: 0.3s ease;
   }
   /*End Home Section*/
 }
@@ -325,10 +349,6 @@ html {
 
   .home .home-content-left p {
     font-size: 0.8rem;
-  }
-
-  .home .home-content-left {
-    margin-top: 20px;
   }
 
   .home .home-content-left .shop-now-btn {
