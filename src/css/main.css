@@ -893,6 +893,10 @@ html {
     margin-top: 20px;
     transition: 0.3s ease;
   }
+
+  .home .home-content-left .shop-now-btn{
+    margin-bottom: 20px;
+  }
   /*End Home Section*/
 
   /*Brands Section*/
@@ -1003,7 +1007,7 @@ html {
   }
 
   .home .home-content-left .shop-now-btn {
-    margin-top: 8px;
+    margin-top: 15px;
   }
   .home .home-content-left .shop-now-btn .button {
     padding: 5px 15px;
