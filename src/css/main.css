@@ -57,12 +57,12 @@ html {
 /*(background of the scrollbar) */
 ::-webkit-scrollbar-track {
   background: var(--gray-100);
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
 /*(the draggable part of the scrollbar) */
 ::-webkit-scrollbar-thumb {
-  background: var(--green-400); 
+  background: var(--green-400);
   border-radius: 10px;
 }
 
@@ -125,6 +125,7 @@ html {
   /* background-color: rgba(0, 0, 0, 0.2); */
   /* background-color: rgba(255, 255, 255, 0.8); */
   background-color: rgba(143, 168, 148, 0.5);
+  /* background-color: var(--green-400); */
 }
 
 .header .navbar a {
@@ -346,6 +347,7 @@ html {
   margin-bottom: 15px;
   transition: 0.2s ease;
   position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .latest-product .l-product {
@@ -355,6 +357,7 @@ html {
 .featured-product .f-product:hover,
 .latest-product .l-product:hover {
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+  transform: scale(1.05); /* Slightly increase the size */
 }
 
 .featured-product .f-product-container .f-product img,
@@ -479,7 +482,6 @@ html {
   flex-wrap: wrap;
   background: var(--gradient-blue-100);
   padding: 90px;
-  margin-bottom: 50px;
 }
 
 .shop-updates .update-text h1 {
@@ -515,7 +517,6 @@ html {
   border-radius: 6px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  
 }
 
 .shop-updates .form .signup {
@@ -530,14 +531,88 @@ html {
   border: 1px solid transparent;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.shop-updates .form .signup:hover {
+  opacity: 80%;
 }
 
 /*End Shop Updates*/
 
+/*Reviews*/
+.reviews {
+  text-align: center;
+  padding: 70px 100px;
+  /* margin-bottom: 60px; */
+  /* border: 2px solid red; */
+}
 
+.reviews h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 83px;
+  margin-top: 20px;
+  color: var(--blue-500);
+}
 
+.reviews p {
+  font-size: 1rem;
+  color: var(--gray-300);
+  margin-top: -8px;
+}
 
+.reviews .reviews-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  /* border: 2px solid magenta; */
+  margin-top: 50px;
+}
 
+.reviews .reviews-container .reviews-description {
+  width: 25%;
+  min-width: 250px;
+  margin-bottom: 30px;
+  padding: 50px 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* border: 2px solid yellow; */
+  border-radius: 6px;
+}
+
+.reviews .reviews-container .reviews-description .quote{
+  font-size: 3rem;
+  color: var(--green-300);
+  margin-bottom: 20px;
+}
+
+.reviews .reviews-container .reviews-description p{
+  font-size: .9rem;
+  color: var(--gray-200);
+  margin-bottom: 20px;
+}
+
+.reviews .reviews-container .reviews-description i{
+  font-size: 1rem;
+  color: var(--yellow-300);
+}
+
+.reviews .reviews-container .reviews-description img {
+  width: 60px;
+  height: 60px; 
+  margin-top: 20px;
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+
+.reviews .reviews-container .reviews-description h3{
+  font-size: 1.1rem;
+  color: var(--blue-700);
+}
+
+/*End Reviews*/
 
 
 /*MQ*/
@@ -550,10 +625,16 @@ html {
   /*End Featured Product and Latest Product*/
 
   /*Shop Updates*/
-  .shop-updates{
+  .shop-updates {
     padding: 80px 30px;
   }
   /*End Shop Updates*/
+
+  /*Customer Reviews*/
+  .reviews{
+    padding: 70px 50px;
+  }
+  /*End Customer Reviews*/
 }
 
 @media screen and (max-width: 1023px) {
@@ -598,11 +679,11 @@ html {
 
   .header .navbar a {
     display: block;
-    margin: 2rem 0;
+    margin: 2.8rem 0;
     text-align: center;
     transform: translateY(-50px);
     opacity: 0;
-    transition: 0.3s ease;
+    transition: 0.4s ease;
   }
 
   .header .navbar a:link,
@@ -649,7 +730,7 @@ html {
   /*End Home Section*/
 
   /*Shop Updates*/
-  .shop-updates{
+  .shop-updates {
     text-align: center;
     justify-content: center;
   }
@@ -658,7 +739,7 @@ html {
     margin-bottom: 20px;
   }
 
-  .shop-updates .form{
+  .shop-updates .form {
     width: 80%;
   }
   /*End Shop Updates*/
@@ -718,16 +799,38 @@ html {
   .latest-product .l-product {
     width: 35%;
   }
-  /*End Featured Product*/
+  /*End Featured Product and Latest Product*/
+
 
   /*Promo Section*/
   .promo .promo-container {
     padding: 60px 30px;
   }
-  /*End Featured Product and Latest Product*/
 
   /*Shop Update*/
+
   /*Shop Update*/
+
+  /*Customer Reviews*/
+  .reviews{
+    padding: 30px 0px;
+  }
+  
+  .reviews h1{
+    line-height: 60px;
+    margin-bottom: 10px;
+  }
+
+  .reviews .reviews-container{
+    display: block;
+  }
+
+  .reviews .reviews-container .reviews-description {
+    width: 45%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+  /*End Customer Reviews*/
 }
 
 @media screen and (max-width: 451px) {
@@ -773,10 +876,16 @@ html {
   /*End Featured Product and Latest Product*/
 
   /*Shop Updates*/
-  .shop-updates .form{
+  .shop-updates .form {
     width: 100%;
   }
   /*End Shop Updates*/
+
+    /*Customer Reviews*/
+    .reviews .reviews-container .reviews-description {
+      width: 80%;
+    }
+    /*End Customer Reviews*/
 }
 
 @media (max-width: 374px) {
@@ -807,4 +916,10 @@ html {
     padding: 80px 13px;
   }
   /*End Promo Section*/
+
+    /*Shop Updates*/
+    .shop-updates .form input{
+      font-size: .8rem;
+    }
+    /*End Shop Updates*/
 }
