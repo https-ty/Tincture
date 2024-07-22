@@ -102,9 +102,10 @@
   .footer hr {
     border: none;
     background: var(--blue-700);
-    height: 1px;
+    height: 1.9px;
     margin: 20px 0;
     margin-right: 60px;
+    color: var(--blue-700);
   }
   .footer .copyright {
     text-align: center;

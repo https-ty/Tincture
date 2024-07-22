@@ -42,14 +42,9 @@
     }
     /*End Customer Reviews*/
   
-    /*Footer*/
-    /* .footer {
-      padding: 30px 0 5px;
-      padding-left: 30px;
-      padding-right: 25px;
-    } */
-  
+    /*Footer*/  
     /*End Footer*/
+
   }
   
   @media screen and (max-width: 1023px) {
@@ -158,6 +153,19 @@
       width: 80%;
     }
     /*End Shop Updates*/
+
+    /*Product Details*/
+    .header {
+      top: 50px;
+    }
+    
+    .product-details {
+      /* border: 2px solid magenta; */
+      margin-top: 170px;
+      padding: 0 50px 100px;
+    }
+
+    /*End Product Details*/
   }
   
   @media screen and (max-width: 768px) {
@@ -281,6 +289,28 @@
       padding-bottom: 0;
     }
     /*End Footer*/
+
+    /*Product Details*/
+    .product-details{
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center horizontally */
+      justify-content: center;
+
+      padding: 0 0px 100px;
+    }
+
+    .product-details .product-img{
+      width: 50%;
+      min-width: 300px;
+      margin-right: 0;
+    }
+
+    .product-details .product-description{
+      width: 90%;
+    }
+
+    /*End Product Details*/
   }
   
   @media screen and (max-width: 451px) {
@@ -355,6 +385,13 @@
 
     /*Shop Page*/
     /*End Shop Page*/
+    .product-details .product-description h2{
+      font-size: 2.9rem;
+      line-height: 73px;
+    }
+    /*Product Details*/
+    
+    /*Product Details*/
   }
   
   @media (max-width: 374px) {

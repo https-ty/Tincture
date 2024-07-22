@@ -1,0 +1,66 @@
+/*Shop Updates*/
+.shop-updates {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: var(--gradient-blue-100);
+    padding: 90px;
+  }
+  
+  .shop-updates .update-text h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--gray-100);
+    margin-bottom: 12px;
+  }
+  
+  .shop-updates .update-text p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--gray-200);
+    flex-wrap: wrap;
+  }
+  
+  .shop-updates .update-text span {
+    color: var(--yellow-300);
+  }
+  
+  .shop-updates .form {
+    display: flex;
+    width: 40%;
+  }
+  
+  .shop-updates .form input {
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .shop-updates .form .signup {
+    font-size: 1rem;
+    color: var(--white-100);
+    background: #8fa894;
+    border-radius: 6px;
+    white-space: wrap;
+    min-width: 100px;
+    width: 20%;
+    outline: none;
+    border: 1px solid transparent;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .shop-updates .form .signup:hover {
+    opacity: 80%;
+  }
+  
+  /*End Shop Updates*/

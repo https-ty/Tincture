@@ -1,0 +1,102 @@
+.header {
+  top: 50px;
+}
+
+.product-details {
+  /* border: 2px solid magenta; */
+  margin-top: 200px;
+  padding: 0 50px 100px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.product-details .product-img {
+  width: 40%;
+  margin-right: 50px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  /* border: 2px solid blue; */
+}
+
+.product-details .product-img img {
+  width: 100%;
+  border-radius: 20px;
+  background-color: var(--gray-100);
+}
+
+.product-details .product-description {
+  width: 50%;
+  padding-top: 30px;
+  /* border: 2px solid blue; */
+}
+
+.product-details .product-description h1,
+.product-details .product-description h2,
+.product-details .product-description h3,
+.product-details .product-description select,
+.product-details .product-description input {
+  margin-top: 13px;
+}
+
+.product-details .product-description h1 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--gray-200);
+}
+
+.product-details .product-description h2 {
+  font-size: 3rem;
+  color: var(--blue-700);
+}
+
+.product-details .product-description h3 {
+  font-size: 2rem;
+  color: var(--gray-300);
+}
+
+.product-details .product-description select {
+  display: block;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.product-details .product-description input {
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.product-details .product-description .add-to-cart {
+  color: var(--white-100);
+  background: #8fa894; /*#8fa894 40edb8*/
+  padding: 10px 30px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.product-details .product-description .add-to-cart:hover {
+  opacity: 80%;
+}
+
+.product-details .product-description h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: var(--blue-700);
+}
+
+.product-details .product-description h4 i {
+  margin-left: 10px;
+}
+
+.product-details .product-description span{
+    font-size: 1rem;
+    color: var(--gray-300);
+    line-height: 35px;
+}
