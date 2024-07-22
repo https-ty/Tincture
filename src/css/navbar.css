@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  transition: width 0.3s ease, padding 0.3s ease;
+}
+
+.header {
+    /* border: 2px solid red; */
+    position: fixed;
+    /* top: 5%; */
+    left: 1px;
+    width: 100%;
+    height: 80px;
+    padding: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    padding: 40px 120px;
+    transition: 0.3s ease;
+    border-radius: 4px;
+  }
+  
+  .header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+    z-index: -1;
+  }
+  
+  .header .logo {
+    height: 80px;
+    width: auto;
+  }
+  
+  .header.scrolled {
+    top: 0;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    background-color: rgba(143, 168, 148, 0.5);
+    /* background-color: var(--green-200); */
+  }
+  
+  .header .navbar a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--blue-700);
+    margin-left: 2.5rem;
+    transition: 0.3s ease;
+  }
+  
+  .header .navbar a:hover {
+    color: var(--green-300);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  }
+  
+  .header .navbar .active {
+    color: var(--green-400);
+    /* color: var(--blue-700); */
+  }
+  
+  .header .hamburger {
+    position: absolute;
+    right: 5%;
+    font-size: 2.2rem;
+    color: var(--blue-700);
+    cursor: pointer;
+    display: none;
+  }
+  
+  .header #check {
+    display: none;
+  }
+  
+  .header .cart {
+    display: block;
+    position: absolute;
+    top: 30%;
+    right: 4%;
+    font-size: 1.6rem;
+    color: var(--blue-500);
+    cursor: pointer;
+  }
+  
+  .header .cart:hover {
+    color: var(--green-400);
+  }
+  /*End Navbar Section*/
