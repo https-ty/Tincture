@@ -18,6 +18,32 @@
   /* border: 2px solid blue; */
 }
 
+/* New: Added magnifying effect */
+.product-details .product-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-details .product-img .magnifier {
+  position: absolute;
+  border: 3px solid var(--gray-100);
+  border-radius: 0; /* Change to 0 to make it square */
+  width: 200px;
+  height: 200px;
+  display: none;
+  pointer-events: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-size: 200%;
+}
+
+.product-details .product-img:hover .magnifier {
+  display: block;
+}
+/* End of new code magnifying effect*/
+
 .product-details .product-img img {
   width: 100%;
   border-radius: 20px;

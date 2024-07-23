@@ -1,0 +1,73 @@
+.header {
+  top: 50px;
+}
+
+.about-us {
+  margin-top: 200px;
+  margin-bottom: 130px;
+  padding: 0 50px 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-us .about-img {
+  width: 40%;
+  margin-right: 50px;
+  text-align: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us .about-img img {
+  width: 80%;
+  min-width: 400px;
+  border-radius: 20px;
+}
+
+.about-us .about-description {
+  width: 50%;
+  padding-top: 30px;
+  /* border: 2px solid blue; */
+}
+
+.about-us .about-description h1 {
+  font-size: 3.7rem;
+  font-weight: 700;
+  line-height: 83px;
+  margin: 20px 0;
+  text-align: start;
+  color: var(--blue-500);
+}
+
+.about-us .about-description span {
+  font-size: 1rem;
+  line-height: 35px;
+  color: var(--gray-300);
+}
+
+.about-us .about-description span:last-of-type{
+    display: block;
+    margin-top: 15px;
+}
+
+.about-us .about-description .shop-now-btn {
+  margin-top: 30px;
+}
+
+.about-us .about-description .arrow {
+  color: var(--white-100);
+  padding-left: 5px;
+}
+.about-us .about-description .button {
+  color: var(--white-100);
+  background: #8fa894; /*#8fa894 40edb8*/
+  padding: 8px 30px;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.about-us .about-description .button:hover {
+  opacity: 80%;
+}

@@ -166,6 +166,16 @@
     }
 
     /*End Product Details*/
+
+    /*About Us*/
+    .about-us {
+      padding: 0 0px 100px;
+    }
+    .about-us .about-img img {
+      min-height: 200px;
+      min-width: 300px;
+    }
+    /*End About Us*/
   }
   
   @media screen and (max-width: 768px) {
@@ -290,8 +300,10 @@
     }
     /*End Footer*/
 
-    /*Product Details*/
-    .product-details{
+    /*Product Details and About Us*/
+    .product-details,
+    .about-us{
+      margin-top: 100px;
       display: flex;
       flex-direction: column;
       align-items: center; /* Center horizontally */
@@ -300,17 +312,19 @@
       padding: 0 0px 100px;
     }
 
-    .product-details .product-img{
+    .product-details .product-img,
+    .about-us .about-img{
       width: 50%;
       min-width: 300px;
       margin-right: 0;
     }
 
-    .product-details .product-description{
+    .product-details .product-description,
+    .about-us .about-description{
       width: 90%;
     }
 
-    /*End Product Details*/
+    /*End Product Details and About Us*/
   }
   
   @media screen and (max-width: 451px) {
@@ -392,6 +406,34 @@
     /*Product Details*/
     
     /*Product Details*/
+
+    /*About Us*/
+
+    .about-us .about-img img {
+      min-height: 200px;
+      min-width: 280px;
+    }
+
+    .about-us .about-description h1{
+      font-size: 3.6rem;
+      text-align: center;
+      line-height: 73px;
+    }
+
+    .about-us .about-description p {
+      font-size: 0.9rem;
+    }
+  
+    .about-us .about-description .shop-now-btn {
+      margin-top: 15px;
+    }
+    .about-us .about-description .shop-now-btn .button {
+      padding: 5px 15px;
+      border-radius: 30px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    /*End About Us*/
+
   }
   
   @media (max-width: 374px) {
