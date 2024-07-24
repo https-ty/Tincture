@@ -21,11 +21,10 @@
     <!-- Font awesome CDN -->
 
     <!--css links-->
-    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/root.css" />
     <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/about-us.css">
     <link rel="stylesheet" href="css/shop-updates.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/mq.css" />
     <!--end css link-->
@@ -53,8 +52,8 @@
       <nav class="navbar">
         <a href="index.html" style="--i: 0">Home</a>
         <a href="shop.html" style="--i: 1">Shop</a>
-        <a href="about-us.html" style="--i: 2" class="active">About</a>
-        <a href="contact.html" style="--i: 5">Contact</a>
+        <a href="about-us.html" style="--i: 2">About</a>
+        <a href="contact.html" style="--i: 5" class="active">Contact</a>
 
         <!-- Cart Icon -->
         <!-- <a href="#"><img src="images/icons/navbar-cart.png" class="cart-icon"/></a> -->
@@ -62,56 +61,87 @@
     </header>
     <!--End Nav Bar-->
 
-    <!--About Us Section-->
-    <section class="about-us">
-      <div class="about-img">
-        <img src="images/logo/navbar-logo.png" alt="" />
-      </div>
+    <!--Contact Us Section-->
+    <section class="contact">
+      <h1>Contact Us</h1>
+      <p>
+        We would love to respond to your queries and help you succeed.
+        <br />
+        Feel free to get in touch with us.
+      </p>
 
-      <div class="about-description">
-        <h1>About Us</h1>
-        <span>
-            The Tincture Store is a nationally recognized online tie-dye company known 
-            for its high-quality brands that cater to all age groups and body types. 
-            We offer a wide range of clothing and accessories for men, women, kids, 
-            and toddlers. Our products stand out with their vibrant colors and sharp
-             designs, sure to impress and delight.
-        </span>
-        
-        <span>
-            At Tincture, we pride ourselves on using premium materials and eco-friendly 
-            dyes to create unique, hand-crafted pieces that make a statement. Whether 
-            you're looking for a bold tee, a cozy hoodie, or fun accessories like caps 
-            and socks, we have something for everyone. Our tie-dye patterns are meticulously 
-            crafted to ensure each piece is one-of-a-kind, reflecting our commitment to quality and creativity.
-        </span>
+      <div class="contact-container">
+        <div class="contact-left">
+            <h3>Sent your request</h3>
+            <div class="input-row">
+                <div class="input-group">
+                    <label>Name</label>
+                    <input type="text" name="Name" placeholder="Write your name">
+                </div>
+                <div class="input-group">
+                    <label>Phone</label>
+                    <input type="text" name="Phone" placeholder="Write your phone number">
+                </div>
+            </div>
 
-        <div class="shop-now-btn">
-        <a href="shop.html" class="button">Shop Now <i class="fa-solid fa-arrow-right-long arrow"></i></a>
-      </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="text" name="Email" placeholder="Write your emial address">
+                </div>
+                <div class="input-group">
+                    <label>Subject</label>
+                    <input type="text" name="Subject" placeholder="Write your subject">
+                </div>  
+            </div>
+                <label>Message</label>
+                <textarea rows="5" placeholder="Your message"></textarea>
 
+                <div class="send-btn">
+                    <button type="submit">Send</button>
+                </div>
+        </div>
+
+        <div class="contact-right">
+                <h3>Reach Us</h3>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>tincturetiedyestore@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>+639696969696</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>#63 Vicensio St. Phase 3-B Bahayang Pagasa Subdivision,
+                        Imus City Cavite</td>
+                    </tr>
+                </table>
+            </div>
       </div>
     </section>
-    <!--End About Us Section-->
+    <!--End Contact Us Section-->
 
-     <!--Shop Updates Section-->
-     <section class="shop-updates">
-        <div class="update-text">
-          <h1>Sign Up for Shop Updates</h1>
-          <p>
-            Get E-mail updates about our products and
-            <span>promo discounts!</span>
-          </p>
-        </div>
-  
-        <div class="form">
-          <input type="text" placeholder="Your email address" />
-          <button class="signup">Sign Up</button>
-        </div>
-      </section>
-      <!--End Shop Updates Section-->
+    <!--Shop Updates Section-->
+    <section class="shop-updates">
+      <div class="update-text">
+        <h1>Sign Up for Shop Updates</h1>
+        <p>
+          Get E-mail updates about our products and
+          <span>promo discounts!</span>
+        </p>
+      </div>
 
-       <!--Footer-->
+      <div class="form">
+        <input type="text" placeholder="Your email address" />
+        <button class="signup">Sign Up</button>
+      </div>
+    </section>
+    <!--End Shop Updates Section-->
+
+    <!--Footer-->
     <footer class="footer">
         <div class="footer-container">
           <div class="footer-content-1">
@@ -156,8 +186,7 @@
         <p class="copyright">&copy; 2024 - Tincture Tie-Dye Store</p>
   
       </footer>
-      <!--End Footer-->
-      
+    <!--End Footer-->
   </body>
 
   <script src="js/main.js"></script>
