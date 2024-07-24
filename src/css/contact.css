@@ -30,6 +30,7 @@ p {
   border-radius: 12px;
   display: flex;
   margin: 60px auto;
+  margin-bottom: 0px;
 }
 
 .contact .contact-left {
@@ -71,6 +72,7 @@ p {
 
 .contact .contact-left textarea {
   width: 100%;
+  height: 180px;
   border: 1px solid #ccc;
   outline: none;
   padding: 10px;
@@ -117,15 +119,45 @@ p {
 .contact .contact-right h3 {
   color: var(--white-100);
   font-weight: 600;
-  margin-bottom: 30px;
   font-size: 1.3rem;
 }
+
+.contact .contact-right tr td{
+   padding-bottom: 10px;
+}
+
 
 .contact .contact-right tr td:first-child {
   color: var(--white-100);
   padding-right: 20px;
 }
+
+
 .contact .contact-right tr td {
-  padding-top: 20px;
   color: var(--white-100);
 }
+
+.contact .contact-right table{
+  padding-top: 0px;
+  margin-top: 30px;
+  /* border-spacing: 0 20px; */
+}
+
+.contact .contact-right .map{
+  text-align: center;
+}
+.contact .contact-right .map h3 {
+  margin: 30px 0;
+  text-align: start;
+}
+
+.contact .contact-right .map iframe{
+  /* border: 2px solid var(--gray-300); */
+  max-width: 100%;
+  /* height: auto; */
+  width: 100%;
+
+}
+
+
+
