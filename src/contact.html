@@ -23,15 +23,14 @@
     <!--css links-->
     <link rel="stylesheet" href="css/root.css" />
     <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/sidecart.css">
-    <link rel="stylesheet" href="css/shop-updates.css" />
+    <link rel="stylesheet" href="css/sidecart.css" />
+    <link rel="stylesheet" href="css/promo.css" />
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/mq.css" />
     <!--end css link-->
   </head>
   <body>
-
     <!--Navbar-->
     <header class="header" id="header">
       <!--Tincture Logo-->
@@ -73,7 +72,7 @@
         <!--Cart header-->
         <div class="cart-header">
           <i class="fa-solid fa-cart-shopping cart" style="width: 30px"></i>
-          
+
           <div class="header-title">
             <h2>Your Cart</h2>
             <span id="items-num">4</span>
@@ -192,133 +191,141 @@
 
       <div class="contact-container">
         <div class="contact-left">
-            <h3>Sent your request</h3>
-            <div class="input-row">
-                <div class="input-group">
-                    <label>Name</label>
-                    <input type="text" name="Name" placeholder="Write your name">
-                </div>
-                <div class="input-group">
-                    <label>Phone</label>
-                    <input type="text" name="Phone" placeholder="Write your phone number">
-                </div>
+          <h3>Sent your request</h3>
+          <div class="input-row">
+            <div class="input-group">
+              <label>Name</label>
+              <input type="text" name="Name" placeholder="Write your name" />
             </div>
-
-            <div class="input-row">
-                <div class="input-group">
-                    <label>Email</label>
-                    <input type="text" name="Email" placeholder="Write your emial address">
-                </div>
-                <div class="input-group">
-                    <label>Subject</label>
-                    <input type="text" name="Subject" placeholder="Write your subject">
-                </div>  
+            <div class="input-group">
+              <label>Phone</label>
+              <input
+                type="text"
+                name="Phone"
+                placeholder="Write your phone number"
+              />
             </div>
-                <label>Message</label>
-                <textarea rows="5" placeholder="Your message"></textarea>
+          </div>
 
-                <div class="send-btn">
-                    <button type="submit">Send</button>
-                </div>
+          <div class="input-row">
+            <div class="input-group">
+              <label>Email</label>
+              <input
+                type="text"
+                name="Email"
+                placeholder="Write your emial address"
+              />
+            </div>
+            <div class="input-group">
+              <label>Subject</label>
+              <input
+                type="text"
+                name="Subject"
+                placeholder="Write your subject"
+              />
+            </div>
+          </div>
+          <label>Message</label>
+          <textarea rows="5" placeholder="Your message"></textarea>
+
+          <div class="send-btn">
+            <button type="submit">Send</button>
+          </div>
         </div>
 
         <div class="contact-right">
-                <h3>Reach Us</h3>
-                <table>
-                    <tr>
-                        <td>Email</td>
-                        <td>tincturetiedyestore@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>Phone</td>
-                        <td>+639696969696</td>
-                    </tr>
-                    <tr>
-                        <td>Address</td>
-                        <td>#63 Vicensio St. Phase 3-B Bahayang Pagasa Subdivision,
-                        Imus City Cavite</td>
-                    </tr>
-                </table>
-                
-                <div class="map">
-                  <h3>Find Us</h3>
-                  <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7716.184831008491!2d120.98201757341846!3d14.599512406049444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca2bfa23d9b1%3A0x34015b4b17705ef5!2sManila%2C%20Metro%20Manila%2C%20Philippines!5e0!3m2!1sen!2sph!4v1690232275562!5m2!1sen!2sph"
-                  width="300"
-                  height="200"
-                  style="border:0;"
-                  allowfullscreen=""
-                  loading="lazy">
-              </iframe>
-              </div>
-              
-            </div>
+          <h3>Reach Us</h3>
+          <table>
+            <tr>
+              <td>Email</td>
+              <td>tincturetiedyestore@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Phone</td>
+              <td>+639696969696</td>
+            </tr>
+            <tr>
+              <td>Address</td>
+              <td>
+                #63 Vicensio St. Phase 3-B Bahayang Pagasa Subdivision, Imus
+                City Cavite
+              </td>
+            </tr>
+          </table>
+
+          <div class="map">
+            <h3>Find Us</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7716.184831008491!2d120.98201757341846!3d14.599512406049444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca2bfa23d9b1%3A0x34015b4b17705ef5!2sManila%2C%20Metro%20Manila%2C%20Philippines!5e0!3m2!1sen!2sph!4v1690232275562!5m2!1sen!2sph"
+              width="300"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            >
+            </iframe>
+          </div>
+        </div>
       </div>
     </section>
     <!--End Contact Us Section-->
 
-    <!--Shop Updates Section-->
-    <section class="shop-updates">
-      <div class="update-text">
-        <h1>Sign Up for Shop Updates</h1>
-        <p>
-          Get E-mail updates about our products and
-          <span>promo discounts!</span>
-        </p>
-      </div>
-
-      <div class="form">
-        <input type="text" placeholder="Your email address" />
-        <button class="signup">Sign Up</button>
+    <!--Promo Section-->
+    <section class="promo">
+      <div class="promo-container">
+        <h1>Tie-Dye Extravaganza</h1>
+        <p>Up to <span>69% Off</span> - Tees, Hoodies, Long Sleeves, & More!</p>
+        <div class="exp-more-btn">
+          <a href="shop.html" class="button">Explore More!</a>
+        </div>
       </div>
     </section>
-    <!--End Shop Updates Section-->
+    <!--End Promo Section-->
 
     <!--Footer-->
     <footer class="footer">
-        <div class="footer-container">
-          <div class="footer-content-1">
-            <h3>Download Our App</h3>
-            <p>Download App for Android and IOS mobile phone.</p>
-            <div class="app-logo">
-              <img src="images/logo/play-store.png" alt="Play store Logo" />
-              <img src="images/logo/app-store.png" alt="App store Logo" />
-            </div>
-          </div>
-  
-          <div class="footer-content-2">
-            <a href="#"><img src="images/logo/footer-logo.png" /></a>
-            <p>
-              Transforming ordinary shirts into stylish fashion while 
-              delivering exceptional quality and service.
-            </p>
-          </div>
-  
-          <div class="footer-content-3">
-            <h3>Useful Links</h3>
-            <ul>
-              <li>Coupons</li>
-              <li>Blog Post</li>
-              <li>Return Policy</li>
-              <li>Join Affiliate</li>
-            </ul>
-          </div>
-  
-          <div class="footer-content-4">
-            <h3>Follow Us</h3>
-            <ul>
-              <li>Facebook</li>
-              <li>Twitter</li>
-              <li>Instagram</li>
-              <li>YouTube</li>
-            </ul>
+      <div class="footer-container">
+        <div class="footer-content-1">
+          <h3>Download Our App</h3>
+          <p>Download App for Android and IOS mobile phone.</p>
+          <div class="app-logo">
+            <img src="images/logo/play-store.png" alt="Play store Logo" />
+            <img src="images/logo/app-store.png" alt="App store Logo" />
           </div>
         </div>
-  
-        <hr/>
-        <p class="copyright">&copy; 2024 - Tincture Tie-Dye Store</p>
-  
-      </footer>
+
+        <div class="footer-content-2">
+          <a href="#"><img src="images/logo/footer-logo.png" /></a>
+          <p>
+            Transforming ordinary shirts into stylish fashion while delivering
+            exceptional quality and service.
+          </p>
+        </div>
+
+        <div class="footer-content-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+          </ul>
+        </div>
+
+        <div class="footer-content-4">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>YouTube</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+      <p class="copyright">&copy; 2024 - Tincture Tie-Dye Store</p>
+    </footer>
     <!--End Footer-->
   </body>
 

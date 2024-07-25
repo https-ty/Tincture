@@ -43,7 +43,7 @@
     border-bottom-right-radius: 0;
   }
   
-  .shop-updates .form .signup {
+  .shop-updates .form .signup{
     font-size: 1rem;
     color: var(--white-100);
     background: #8fa894;
@@ -62,5 +62,4 @@
   .shop-updates .form .signup:hover {
     opacity: 80%;
   }
-  
   /*End Shop Updates*/

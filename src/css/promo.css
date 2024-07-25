@@ -1,0 +1,52 @@
+/*Promo Section*/
+.promo {
+    text-align: center;
+  }
+  
+  .promo .promo-container {
+    background-image: url(/Tincture-Ecommerce/src/images/bg/frame_bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    /* min-height: 35vh; */
+    padding: 80px;
+  }
+  
+  .promo .promo-container h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    /* line-height: 83px; */
+    color: var(--blue-700);
+  }
+  
+  .promo .promo-container p {
+    font-size: 2.8rem;
+    font-weight: 700;
+    /* line-height: 83px; */
+    color: var(--blue-700);
+  }
+  
+  .promo .promo-container span {
+    /* color: #f43c44; */
+    color: var(--green-400);
+  }
+  
+  .promo .promo-container .exp-more-btn {
+    margin-top: 20px;
+  }
+  
+  .promo .promo-container .exp-more-btn .button {
+    color: var(--white-100);
+    background: #8fa894; /*#8fa894 40edb8*/
+    padding: 8px 30px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .promo .promo-container .exp-more-btn .button:hover {
+    opacity: 80%;
+  }
+  
+  /*End Promo Section*/
