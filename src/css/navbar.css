@@ -23,7 +23,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 1;
     padding: 40px 120px;
     transition: 0.3s ease;
     border-radius: 4px;
@@ -43,6 +43,7 @@
   .header .logo {
     height: 80px;
     width: auto;
+    z-index: 0;
   }
   
   .header.scrolled {

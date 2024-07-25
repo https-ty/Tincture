@@ -548,4 +548,10 @@
     font-size: 0.8rem;
   }
   /*End Shop Updates*/
+
+  /*Side Cart*/
+  .sidecart{
+    width: 320px;
+  }
+  /*End Side Cart*/
 }
