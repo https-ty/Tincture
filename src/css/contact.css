@@ -175,8 +175,18 @@ p {
   max-width: 100%;
   /* height: auto; */
   width: 100%;
-
 }
+
+/*Sweet Alert Button*/
+.sweet-alert .confirm {
+  background-color: var(--green-300) !important; /* Green button */
+  color: var(--white-100) !important; /* Text color */
+}
+
+.sweet-alert .confirm:hover{
+  opacity: 80%;
+}
+/*End Sweet Alet Button*/
 
 
 
