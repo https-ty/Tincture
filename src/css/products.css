@@ -133,3 +133,14 @@
   background-color: rgba(143, 168, 148, 0.5);
 }
 /*End Featured Product and Latest Product*/
+
+/*Sweet Alert Button*/
+.sweet-alert .confirm {
+  background-color: var(--green-300) !important; /* Green button */
+  color: var(--white-100) !important; /* Text color */
+}
+
+.sweet-alert .confirm:hover{
+  opacity: 80%;
+}
+/*End Sweet Alet Button*/
