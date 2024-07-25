@@ -41,6 +41,8 @@
     font-size: 1.3rem;
     color: var(--blue-700);
     margin-bottom: 20px;
+    font-family: var(--font-headers);
+    font-weight: 600;
   }
   
   .footer .footer-container .footer-content-1 p,
@@ -48,6 +50,7 @@
     font-size: 1rem;
     /* color: var(--gray-300); */
     color: var(--gray-200);
+    font-family: var(--font-paragraph);
   }
   
   .footer .footer-container .footer-content-1 .app-logo {
@@ -92,11 +95,13 @@
     color: var(--gray-200);
     cursor: pointer;
     transition: 0.3s ease;
+    font-family: var(--font-paragraph);
   }
   
   .footer .footer-container .footer-content-3 ul li:hover,
   .footer-content-4 ul li:hover {
-    color: var(--green-400);
+    color: var(--green-200);
+    text-decoration: underline;
   }
   
   .footer hr {
@@ -112,5 +117,7 @@
     padding-bottom: 15px;
     color: var(--blue-500);
     opacity: 80%;
+    font-family: var(--font-paragraph);
+    font-weight: 600;
   }
   /*End Footer Section*/

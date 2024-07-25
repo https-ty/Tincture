@@ -32,7 +32,7 @@
 
   /* Pagination */
 .pagination {
-    margin-top: 20px;
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,6 +48,9 @@
     padding: 8px 20px;
     transition: 0.3s ease;
     border-radius: 5px;
+    font-family: var(--font-headers);
+    font-weight: 700;
+    font-size: 1rem;
   }
   
   .pagination button:hover {

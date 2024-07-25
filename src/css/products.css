@@ -15,14 +15,16 @@
   line-height: 83px;
   margin-top: 20px;
   color: var(--blue-500);
+  font-family: var(--font-headers);
 }
 
 .featured-product p,
 .latest-product p,
 .shop-product p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--gray-300);
   margin-top: -8px;
+  font-family: var(--font-paragraph);
 }
 
 .featured-product .f-product-container,
@@ -86,6 +88,7 @@
 .shop-product .s-product-container .s-product .description span {
   color: var(--gray-200);
   font-size: 1rem;
+  font-family: var(--font-paragraph);
 }
 
 .featured-product .f-product-container .f-product .description h5,
@@ -94,6 +97,7 @@
   padding-top: 5px;
   color: var(--blue-700);
   font-size: 1.2rem;
+  font-family: var(--font-paragraph);
 }
 
 .featured-product .f-product-container .f-product .description i,
@@ -110,6 +114,7 @@
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--green-400);
+  font-family: var(--font-headers);
 }
 
 .featured-product .f-product-container .f-product .cart,

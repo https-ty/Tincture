@@ -16,9 +16,10 @@
   
   .promo .promo-container h1 {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 750;
     /* line-height: 83px; */
     color: var(--blue-700);
+    font-family: var(--font-pargraph);
   }
   
   .promo .promo-container p {
@@ -26,11 +27,13 @@
     font-weight: 700;
     /* line-height: 83px; */
     color: var(--blue-700);
+    font-family: var(--font-headers);
   }
   
   .promo .promo-container span {
     /* color: #f43c44; */
     color: var(--green-400);
+    font-family: var(--font-headers);
   }
   
   .promo .promo-container .exp-more-btn {
@@ -43,6 +46,8 @@
     padding: 8px 30px;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: var(--font-pargraph);
+    font-size: 1rem;
   }
   
   .promo .promo-container .exp-more-btn .button:hover {
