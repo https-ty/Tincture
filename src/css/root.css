@@ -1,74 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /*font-family: "Roboto", sans-serif;
 font-family: "Nunito", sans-serif;*/
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    outline: none;
-    font-family: "Nunito", sans-serif;
-    transition: width 0.3s ease, padding 0.3s ease;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  font-family: "Nunito", sans-serif;
+  transition: width 0.3s ease, padding 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
-    /*Fonts*/
-    --font-headers: "Roboto", sans-serif;
-    --font-paragraph: "Nunito", sans-serif;
-  
-    /*Colors*/
-    --white-100: #ffffff;
-    --white-200: #f6f6f6;
-    --white-300: #f7f6f7; /*BG Hero*/
-  
-    --blue-500: #122743;
-    --blue-700: #132743;
-    --gradient-blue-100: linear-gradient(
-      90deg,
-      rgb(19, 39, 67),
-      rgb(42, 74, 115)
-    );
-    --gradient-blue-200: linear-gradient(90deg, rgb(19, 39, 67), rgb(31, 58, 91));
-  
-    --gray-100: #f0eff0;
-    --gray-200: #88909d;
-    --gray-300: #596477;
-  
-    --green-100: #40edb8;
-    --green-200: #a8c2a9;
-    --green-300: #8fa894;
-    --green-400: #738677;
-  
-    --yellow-300: #e8b625;
-  }
+  /*Fonts*/
+  --font-headers: "Roboto", sans-serif;
+  --font-paragraph: "Nunito", sans-serif;
 
-  /* Style the scrollbar */
+  /*Colors*/
+  --white-100: #fefeff;
+
+  --gray-100: #E9ECEF;
+
+  --blue-1000: #022633;
+  --blue-950: #033649;
+  --blue-900: #105269;
+  --blue-800: #0d647d;
+  --blue-700: #037c9b;
+  --blue-600: #009dc0;
+  --blue-500: #00c5e5;
+  --blue-200: #9efaff;
+  --blue-50: #eaffff;
+
+  --yellow-300: #e8b625;
+}
+
+/* Style the scrollbar */
 ::-webkit-scrollbar {
   width: 7px;
 }
 
 /*(background of the scrollbar) */
 ::-webkit-scrollbar-track {
-  background: var(--gray-100);
+  background: var(--blue-50);
   border-radius: 8px;
 }
 
 /*(the draggable part of the scrollbar) */
 ::-webkit-scrollbar-thumb {
-  background: var(--green-400);
+  background: var(--blue-600);
   border-radius: 10px;
 }
 
 /* Style the scrollbar thumb on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--green-400);
+  background: var(--blue-600);
 }
 /*End Style the scrollbar*/

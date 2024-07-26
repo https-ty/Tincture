@@ -4,14 +4,14 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background: var(--gradient-blue-100);
+    background: var(--blue-950);
     padding: 90px;
   }
   
   .shop-updates .update-text h1 {
     font-size: 1.8rem;
     font-weight: 800;
-    color: var(--gray-100);
+    color: var(--blue-50);
     margin-bottom: 12px;
     font-family: var(--font-headers);
   }
@@ -19,13 +19,13 @@
   .shop-updates .update-text p {
     font-size: 1.1rem;
     font-weight: 600;
-    color: var(--gray-200);
+    color: var(--blue-50);
     flex-wrap: wrap;
     font-family: var(--font-paragraph);
   }
   
   .shop-updates .update-text span {
-    color: var(--yellow-300);
+    color: var(--blue-500);
     font-family: var(--font-paragraph);
   }
   
@@ -51,7 +51,7 @@
   .shop-updates .form .signup{
     font-size: 1rem;
     color: var(--white-100);
-    background: #8fa894;
+    background: var(--blue-600);
     border-radius: 6px;
     white-space: wrap;
     min-width: 100px;
@@ -62,7 +62,7 @@
     border-bottom-left-radius: 0;
     cursor: pointer;
     transition: 0.3s ease;
-    font-weight: 600;
+    font-weight: 650;
     font-family: var(--font-paragraph); 
   }
   
