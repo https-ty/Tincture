@@ -96,6 +96,10 @@ body {
   transform: scale(1.1);
 }
 
+.no-scroll { /*No scrollbar will pop when side cart is open*/
+  overflow: hidden;
+}
+
 /*End Cart Header*/
 
 /*Cart Items*/

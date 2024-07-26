@@ -6,7 +6,7 @@
     
 }
 .contact h1,
-p {
+.contact p {
   text-align: center;
 }
 
@@ -16,23 +16,24 @@ p {
   font-weight: 600;
   line-height: 83px;
   /* margin-top: 20px; */
-  color: var(--blue-500);
+  color: var(--blue-900);
   font-family: var(--font-headers);
 }
 
 .contact p {
   font-size: 1.1rem;
-  color: var(--gray-300);
+  color: var(--blue-800);
   margin-top: -8px;
   font-family: var(--font-paragraph);
 }
 
 .contact .contact-container {
-  background-color: var(--white-200);
+  background-color: var(--white-100);
   border-radius: 12px;
   display: flex;
   margin: 60px auto;
   margin-bottom: 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .contact .contact-left {
@@ -46,7 +47,7 @@ p {
 } */
 
 .contact .contact-left h3 {
-  color: var(--blue-700);
+  color: var(--blue-600);
   font-weight: 550;
   margin-bottom: 30px;
   font-size: 1.3rem;
@@ -66,27 +67,27 @@ p {
 .contact .contact-left input {
   width: 100%;
   border: none;
-  border-bottom: 1px solid var(--gray-200);
+  border-bottom: 1px solid var(--gray-100);
   outline: none;
   padding-bottom: 5px;
-  background-color: var(--white-200);
+  background-color: var(--white-100);
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--gray-300);
+  color: var(--blue-900);
   letter-spacing: .5px;
 }
 
 .contact .contact-left textarea {
   width: 100%;
   height: 180px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--gray-100); /*#ccc*/
   outline: none;
   padding: 10px;
   box-sizing: border-box;
   /* color: var(--blue-500); */
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--gray-300);
+  color: var(--blue-900);
   letter-spacing: .5px;
   background-color: var(--white-100);
 }
@@ -94,7 +95,7 @@ p {
 .contact .contact-left label {
   margin-bottom: 6px;
   display: block;
-  color: var(--blue-700);
+  color: var(--blue-800);
   font-size: 1.1rem;
   font-family: var(--font-paragraph);
   font-weight: 500;
@@ -107,7 +108,7 @@ p {
 
 .contact .contact-left .send-btn button {
   color: var(--white-100);
-  background: #8fa894; /*#8fa894 40edb8*/
+  background: var(--blue-600);
   padding: 8px 30px;
   border-radius: 40px;
   border: none;
@@ -116,7 +117,7 @@ p {
   margin-left: auto;
   font-family: var(--font-paragraph);
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 650;
 }
 
 .contact .contact-left .send-btn button:hover {
@@ -126,7 +127,7 @@ p {
 .contact .contact-right {
   flex-basis: 40%;
   padding: 40px;
-  background-color: var(--green-300);
+  background-color: var(--blue-600);
   color: var(--white-100);
   border-radius: 0px 12px 12px 0px;
 }
@@ -177,9 +178,12 @@ p {
   width: 100%;
 }
 
+/*Side Cart*/
+/*End Side Cart*/
+
 /*Sweet Alert Button*/
 .sweet-alert .confirm {
-  background-color: var(--green-300) !important; /* Green button */
+  background-color: var(--blue-600) !important; /* Green button */
   color: var(--white-100) !important; /* Text color */
 }
 

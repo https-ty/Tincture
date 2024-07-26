@@ -1,0 +1,22 @@
+/* Style the scrollbar */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /*(background of the scrollbar) */
+  ::-webkit-scrollbar-track {
+    background: var(--blue-50);
+    border-radius: 8px;
+  }
+  
+  /*(the draggable part of the scrollbar) */
+  ::-webkit-scrollbar-thumb {
+    background: var(--blue-600);
+    border-radius: 10px;
+  }
+  
+  /* Style the scrollbar thumb on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--blue-600);
+  }
+  /*End Style the scrollbar*/

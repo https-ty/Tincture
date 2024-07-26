@@ -44,7 +44,7 @@
     border: none;
     cursor: pointer;
     color: var(--white-100);
-    background: #8fa894; /*#8fa894 40edb8*/
+    background: var(--blue-600);
     padding: 8px 20px;
     transition: 0.3s ease;
     border-radius: 5px;
@@ -54,7 +54,7 @@
   }
   
   .pagination button:hover {
-    background-color: var(--blue-500);
+    opacity: 80%;
   }
   
   /* Arrow Buttons */
