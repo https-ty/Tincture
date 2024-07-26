@@ -1,7 +1,8 @@
 /*Start Navbar Section*/
 .home .container {
   /* background-image: url(/Tincture-Ecommerce/src/images/bg/frame_bg.png); */
-  background-color: var(--white-100);
+  /* background-color: var(--white-100); */
+   background-image: url(/Tincture-Ecommerce/src/images/bg/bgs.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -92,10 +93,9 @@
   transition: 0.3s ease;
 }
 
-.home .home-content-right .blob {
+/* .home .home-content-right .blob {
   width: 100%;
   height: auto;
-  /* max-width: 1200px; */
   min-width: 370px;
   min-height: 500px;
   overflow: hidden;
@@ -116,7 +116,7 @@
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
   overflow: hidden;
-}
+} */
 /*End Home Section*/
 
 /*Brands Section*/
