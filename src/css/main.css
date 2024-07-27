@@ -234,7 +234,7 @@ filter: drop-shadow(5px 5px 8px var(--blue-900));
   text-align: center;
   padding: 70px 100px;
 
-  background-image: url(/Tincture-Ecommerce/src/images/bg/reviews-bg.png);
+  background-image: url(/Tincture-Ecommerce/src/images/bg/reviews-bg.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -278,6 +278,8 @@ filter: drop-shadow(5px 5px 8px var(--blue-900));
   /* border: 2px solid yellow; */
   border-radius: 6px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--white-100);
+  /* border: 2px solid red; */
 }
 
 .reviews .reviews-container .reviews-description:hover {

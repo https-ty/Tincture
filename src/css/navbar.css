@@ -72,7 +72,7 @@
   top: 0;
   /* background-color: transparent;
     backdrop-filter: blur(8px); */
-  background-color: var(--white-100);
+  background-color: var(--white-200);
 }
 
 .header.scrolled .logo{

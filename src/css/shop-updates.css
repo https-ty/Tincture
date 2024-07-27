@@ -5,7 +5,13 @@
     align-items: center;
     flex-wrap: wrap;
     background: var(--blue-950);
-    padding: 90px;
+    /* padding: 90px; */
+    padding: 50px 50px;
+  }
+
+  .shop-updates .update-text {
+    width: 45%;
+    margin: 0px 80px;
   }
   
   .shop-updates .update-text h1 {
@@ -31,7 +37,8 @@
   
   .shop-updates .form {
     display: flex;
-    width: 40%;
+    width: 65%;
+    margin-top: 25px;
   }
   
   .shop-updates .form input {
@@ -69,4 +76,15 @@
   .shop-updates .form .signup:hover {
     opacity: 80%;
   }
+
+
+  .shop-updates .gadgets{
+    width: 30%;
+    margin: 0px 80px;
+  }
+
+  .shop-updates .gadgets img {
+    max-width: 100%;
+    height: auto;
+}
   /*End Shop Updates*/

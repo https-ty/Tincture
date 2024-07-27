@@ -26,10 +26,13 @@ html {
 
   /*Colors*/
   --white-100: #fefeff;
+  --white-200: #f0f2ff; 
 
   --gray-100: #E9ECEF;
 
-  --blue-1000: #022633;
+  /* --blue-1000: #022633; */
+  --blue-1000: #000d1a;
+
   --blue-950: #033649;
   --blue-900: #105269;
   --blue-800: #0d647d;
