@@ -4,7 +4,8 @@
   }
   
   .promo .promo-container {
-    background-image: url(/Tincture-Ecommerce/src/images/bg/frame_bg.png);
+    /* background-image: url(/Tincture-Ecommerce/src/images/bg/frame_bg.png); */
+    background-image: url(/Tincture-Ecommerce/src/images/bg/promo-bgs.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,7 +19,7 @@
     font-size: 1.5rem;
     font-weight: 750;
     /* line-height: 83px; */
-    color: var(--blue-900);
+    color: var(--blue-50);
     font-family: var(--font-pargraph);
   }
   
@@ -26,7 +27,8 @@
     font-size: 2.8rem;
     font-weight: 700;
     /* line-height: 83px; */
-    color: var(--blue-900);
+    /* color: var(--blue-900); */
+    color: var(--blue-50);
     font-family: var(--font-headers);
     margin-top: 20px;
   }

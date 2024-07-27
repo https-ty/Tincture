@@ -1,11 +1,33 @@
 /*Featured Product and Latest Product*/
 
+.featured-product{
+  background-image: url(/Tincture-Ecommerce/src/images/bg/feature-bg.svg);
+  background-size: cover;
+  background-position: center;
+  /* background-position: top right; */
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.latest-product{
+  background-image: url(/Tincture-Ecommerce/src/images/bg/latest-product-bg..png);
+  background-size: cover;
+  background-position: center;
+  /* background-position: top right; */
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+
+
 .featured-product,
 .latest-product,
 .shop-product{
   text-align: center;
   padding: 70px 100px;
-  margin-bottom: 60px;
+  /* margin-bottom: 0px; */
 }
 
 .featured-product h1,
@@ -44,7 +66,7 @@
   width: 20%;
   min-width: 200px;
   padding: 10px 12px;
-  border: 1px solid var(--blue-50);
+  border: 1px solid #FAFAFA;
   background-color: var(--white-100);
   border-radius: 25px;
   cursor: pointer;
@@ -75,7 +97,7 @@
   width: 100%;
   height: 260px;
   border-radius: 20px;
-  background-color: var(--blue-50);
+  background-color: #FAFAFA;
 }
 
 .featured-product .f-product-container .f-product .description,
@@ -128,7 +150,7 @@
   border-radius: 50px;
   background-color: var(--white-100);
   color: var(--green-400);
-  border: 1px solid var(--blue-200);
+  border: 1px solid #FAFAFA;
   position: absolute;
   bottom: 20px;
   right: 10px;
