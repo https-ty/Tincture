@@ -23,7 +23,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
+  z-index: 5;
   padding: 40px 120px;
   transition: 0.3s ease;
   /* border-radius: 4px; */
@@ -46,6 +46,7 @@
   height: 80px;
   width: auto;
   z-index: 0;
+  padding: 5px;
 }
 
 .header .navbar a {
@@ -71,14 +72,14 @@
   top: 0;
   /* background-color: transparent;
     backdrop-filter: blur(8px); */
-  background-color: var(--blue-600);
+  background-color: var(--white-100);
 }
 
 .header.scrolled .logo{
-  padding: 8px;
+  padding: 5px;
 }
 
-.header.scrolled .navbar a {
+/* .header.scrolled .navbar a {
   color: var(--blue-50);
 }
 
@@ -98,7 +99,7 @@
 
 .header.scrolled .cart:hover{
   color: var(--blue-200);
-}
+} */
 
 /*End Navbar when scrolled*/
 

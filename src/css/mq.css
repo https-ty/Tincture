@@ -29,6 +29,12 @@
 }
 
 @media screen and (max-width: 1146px) {
+    /*Home Content Section*/
+    .home .home-content-right .svg-container{
+      display: none;
+    }
+    /*End Home Content Section*/
+
   /*Featured Product, Latest Product and Shop Product*/
   .featured-product,
   .latest-product,
@@ -79,15 +85,15 @@
 
   .header .navbar {
     position: absolute;
-    top: 100%;
+    top: 99%;
     left: 0;
     width: 100%;
     height: 0;
-    background-color: var(--blue-600);
-    /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); */
+    background-color: var(--white-100);
     overflow: hidden;
     transition: 0.3s ease;
     border-radius: 0 0 4px 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   .header #check:checked ~ .navbar {
@@ -100,17 +106,47 @@
     text-align: center;
     transform: translateY(-50px);
     opacity: 0;
-    transition: 0.4s ease;
+    transition: 0.3s ease;
+
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  .header .navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--blue-600);
+    transition: width 0.3s ease;
   }
 
   .header .navbar a:link,
   .header .navbar a:visited {
-    color: var(--blue-50);
+    color: var(--blue-900);
   }
 
+  /* .header .navbar a.active {
+    color: var(--blue-600);
+  } */
+  /* 
   .header .navbar a:hover {
-    color: var(--blue-50);
+    color: var(--blue-600);
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  } */
+
+  .header .navbar a:hover,
+  .header .navbar a.active {
+    color: var(--blue-600);
+  }
+
+  /* Hover effect */
+  .header .navbar a:hover::after,
+  .header .navbar a.active::after {
+    width: 10%;
   }
 
   .header #check:checked ~ .navbar a {
@@ -128,6 +164,7 @@
     top: 0;
     right: 0;
   }
+
   /*End Navbar*/
 
   /*Home Section*/
@@ -217,7 +254,6 @@
     margin-bottom: 25px;
   }
 
-  
   /*Contact*/
 }
 
@@ -375,7 +411,7 @@
     margin-bottom: 10px;
   }
 
-  .contact .contact-right td{
+  .contact .contact-right td {
     padding: 0px 0px;
   }
 
@@ -392,7 +428,7 @@
   .contact .contact-right tr td {
     word-wrap: break-word;
     word-break: break-word;
-}
+  }
 
   .contact .contact-right tr td:first-child {
     display: block;
@@ -403,7 +439,6 @@
     display: block;
     padding-top: 3px;
   }
-
 
   /*Contact*/
 }
@@ -551,7 +586,7 @@
   /*End Shop Updates*/
 
   /*Side Cart*/
-  .sidecart{
+  .sidecart {
     width: 320px;
   }
   /*End Side Cart*/
