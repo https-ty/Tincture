@@ -3,6 +3,13 @@
 }
 .contact{
     padding: 140px 150px;
+
+    background-image: url(/Tincture-Ecommerce/src/images/bg/reviews-bg.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
     
 }
 .contact h1,
@@ -127,7 +134,14 @@
 .contact .contact-right {
   flex-basis: 40%;
   padding: 40px;
-  background-color: var(--blue-600);
+  /* background-color: var(--blue-600); */
+  background-image: url(/Tincture-Ecommerce/src/images/bg/contact-right-bg.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+
   color: var(--white-100);
   border-radius: 0px 12px 12px 0px;
 }

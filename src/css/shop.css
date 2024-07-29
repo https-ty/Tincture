@@ -2,6 +2,17 @@
   top: 50px;
 }
 
+.shop-product{
+  /* border: 2px solid red; */
+  background-image: url(/Tincture-Ecommerce/src/images/bg/shop-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+
 .shop-product h1{
     /* border: 2px solid magenta; */
     padding-top: 100px;
