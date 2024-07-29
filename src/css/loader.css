@@ -1,0 +1,174 @@
+/* .loader-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 99999;
+  background-color: var(--white-100);
+}
+
+.loader {
+  height: 5px;
+  width: 1px;
+  position: absolute;
+  animation: rotate0234 3.5s linear infinite;
+  top: 40px;
+}
+
+.loader .dot {
+  top: 20px;
+  height: 7px;
+  width: 7px;
+  background: #268fe4;
+  border-radius: 50%;
+  position: relative;
+}
+
+.loader-container.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+
+@keyframes rotate0234 {
+  30% {
+    transform: rotate(220deg);
+  }
+
+  40% {
+    transform: rotate(450deg);
+    opacity: 1;
+  }
+
+  75% {
+    transform: rotate(720deg);
+    opacity: 1;
+  }
+
+  76% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+}
+
+.loader:nth-child(1) {
+  animation-delay: 0.15s;
+}
+
+.loader:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.loader:nth-child(3) {
+  animation-delay: 0.45s;
+}
+
+.loader:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.loader:nth-child(5) {
+  animation-delay: 0.75s;
+}
+
+.loader:nth-child(6) {
+  animation-delay: 0.9s;
+} */
+
+.loader-container {
+    position: fixed; /* Ensure it's fixed in the viewport */
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%; /* Cover full width */
+    z-index: 99999;
+    background-color: var(--white-100); /* Ensure this variable is defined */
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Smooth transition */
+  }
+  
+  .loader-container.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  /* Loader animation styles */
+  .loader {
+    height: 5px;
+    width: 1px;
+    position: absolute;
+    animation: rotate0234 3.5s linear infinite;
+    top: 40px;
+  }
+  
+  .loader .dot {
+    top: 20px;
+    height: 7px;
+    width: 7px;
+    background: #268fe4;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  /* Keyframes for animation */
+  @keyframes rotate0234 {
+    30% {
+      transform: rotate(220deg);
+    }
+  
+    40% {
+      transform: rotate(450deg);
+      opacity: 1;
+    }
+  
+    75% {
+      transform: rotate(720deg);
+      opacity: 1;
+    }
+  
+    76% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 0;
+      transform: rotate(0deg);
+    }
+  }
+  
+  /* Animation delays */
+  .loader:nth-child(1) {
+    animation-delay: 0.15s;
+  }
+  
+  .loader:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  
+  .loader:nth-child(3) {
+    animation-delay: 0.45s;
+  }
+  
+  .loader:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+  
+  .loader:nth-child(5) {
+    animation-delay: 0.75s;
+  }
+  
+  .loader:nth-child(6) {
+    animation-delay: 0.9s;
+  }
+
+  /* Animation delays */
+.loader:nth-child(1) {
+    animation-delay: 0.15s;
+  }

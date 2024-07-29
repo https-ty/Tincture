@@ -129,7 +129,8 @@
     height: 0;
     background-color: var(--white-200);
     overflow: hidden;
-    transition: 0.3s ease;
+    /* transition: 0.3s ease; */
+    transition: height 0.3s ease;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
@@ -144,10 +145,11 @@
     text-align: center;
     transform: translateY(-50px);
     opacity: 0;
-    transition: 0.3s ease;
-
+    /* transition: 0.3s ease; */
+    transition: transform 0.3s ease, opacity 0.3s ease;
     position: relative;
-    transition: color 0.3s ease;
+    transition-delay: calc(0.12s * var(--i));
+    /* transition: color 0.3s ease; */
   }
 
   .header .navbar a::after {
@@ -190,7 +192,7 @@
   .header #check:checked ~ .navbar a {
     transform: translateY(0);
     opacity: 1;
-    transition-delay: calc(0.12s * var(--i));
+    /* transition-delay: calc(0.12s * var(--i)); */
   }
 
   .header .hamburger #close-icon {
