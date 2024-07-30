@@ -18,11 +18,9 @@
 }
 
 .contact h1 {
-  /* padding-top: 100px; */
   font-size: 3rem;
   font-weight: 600;
   line-height: 83px;
-  /* margin-top: 20px; */
   color: var(--blue-900);
   font-family: var(--font-headers);
 }
@@ -45,13 +43,8 @@
 
 .contact .contact-left {
   flex-basis: 60%;
-  /* min-width: 430px; */
   padding: 40px 60px;
 }
-
-/* .contact .contact-left .send-btn button{
-    margin-left: auto;
-} */
 
 .contact .contact-left h3 {
   color: var(--blue-600);
@@ -87,11 +80,10 @@
 .contact .contact-left textarea {
   width: 100%;
   height: 180px;
-  border: 1px solid var(--gray-100); /*#ccc*/
+  border: 1px solid var(--gray-100);
   outline: none;
   padding: 10px;
   box-sizing: border-box;
-  /* color: var(--blue-500); */
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--blue-900);
@@ -134,7 +126,6 @@
 .contact .contact-right {
   flex-basis: 40%;
   padding: 40px;
-  /* background-color: var(--blue-600); */
   background-image: url(/Tincture-Ecommerce/src/images/bg/contact-right-bg.svg);
   background-size: cover;
   background-position: center;
@@ -174,7 +165,6 @@
 .contact .contact-right table{
   padding-top: 0px;
   margin-top: 30px;
-  /* border-spacing: 0 20px; */
 }
 
 .contact .contact-right .map{
@@ -186,19 +176,18 @@
 }
 
 .contact .contact-right .map iframe{
-  /* border: 2px solid var(--gray-300); */
   max-width: 100%;
-  /* height: auto; */
   width: 100%;
 }
 
 /*Side Cart*/
+
 /*End Side Cart*/
 
 /*Sweet Alert Button*/
 .sweet-alert .confirm {
-  background-color: var(--blue-600) !important; /* Green button */
-  color: var(--white-100) !important; /* Text color */
+  background-color: var(--blue-600) !important;
+  color: var(--white-100) !important; 
 }
 
 .sweet-alert .confirm:hover{

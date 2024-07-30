@@ -1,11 +1,9 @@
 /*Start Navbar Section*/
-.home{
+.home {
   position: relative;
 }
 .home .container {
-  /* background-image: url(/Tincture-Ecommerce/src/images/bg/frame_bg.png); */
-  /* background-color: var(--white-100); */
-   background-image: url(/Tincture-Ecommerce/src/images/bg/bgs.svg);
+  background-image: url(/Tincture-Ecommerce/src/images/bg/bgs.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,16 +25,11 @@
   flex-wrap: wrap;
   margin-top: 90px;
   height: 94.5%;
-  /* border: red 2px solid; */
 }
 
 .home .home-content-left {
-  /* border: red 2px solid; */
   width: 55%;
-  /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; */
-    border: 2px solid transparent;
+  border: 2px solid transparent;
 }
 
 .home .home-content-left h1 {
@@ -50,7 +43,7 @@
   margin-top: -60px;
 }
 
-.home .home-content-left span{
+.home .home-content-left span {
   color: var(--blue-600);
   font-family: var(--font-headers);
 }
@@ -67,12 +60,11 @@
   margin-top: 30px;
 }
 
-.home .home-content-left .shop-now-btn .arrow{
+.home .home-content-left .shop-now-btn .arrow {
   color: var(--white-100);
   padding-left: 5px;
 }
 .home .home-content-left .shop-now-btn .button {
-  /* color: var(--white-100); */
   color: var(--white-100);
   background: var(--blue-600);
   padding: 8px 30px;
@@ -83,25 +75,8 @@
 }
 
 .home .home-content-left .shop-now-btn .button:hover {
-  /* background-color: var(--blue-500); */
   opacity: 80%;
 }
-
-/* .home .home-content-right {
-  border: red 2px solid;
-  width: 45%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  transition: 0.3s ease;
-}
-
-.home .home-content-right .woman {
-  height: 100%;
-  width: auto;
-  object-fit: cover;
-} */
 
 .home .home-content-right {
   width: 45%;
@@ -110,8 +85,6 @@
   align-items: center;
   height: 100%;
   position: relative;
-  /* overflow: hidden; */
-  /* border: 2px solid red; */
 }
 
 .home .home-content-right img {
@@ -119,24 +92,19 @@
   width: auto;
   object-fit: cover;
   z-index: 1;
-  /* -webkit-filter: drop-shadow(5px 5px 10px rgba(0, 197, 229, 0.5));
-  filter: drop-shadow(5px 5px 10px rgba(0, 197, 229, 0.5));*/
   border-radius: 8px;
-
-  -webkit-filter: drop-shadow(5px 5px 10px #FEFEFF);
-filter: drop-shadow(5px 5px 8px var(--blue-900));
+  -webkit-filter: drop-shadow(5px 5px 10px #fefeff);
+  filter: drop-shadow(5px 5px 8px var(--blue-900));
 }
-
 
 .home .home-content-right .svg-container {
   position: absolute;
-  top: 40%; 
+  top: 40%;
   left: 48.5%;
   width: 100%;
   height: 80%;
-  transform: translate(-50%, -50%); 
-  z-index: 0; 
-  /* border: 2px solid red; */
+  transform: translate(-50%, -50%);
+  z-index: 0;
 }
 
 .home .svg-container svg {
@@ -185,15 +153,12 @@ filter: drop-shadow(5px 5px 8px var(--blue-900));
 .reviews {
   text-align: center;
   padding: 70px 100px;
-
   background-image: url(/Tincture-Ecommerce/src/images/bg/reviews-bg.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-
-  /* margin-bottom: 60px; */
 }
 
 .reviews h1 {
@@ -218,7 +183,6 @@ filter: drop-shadow(5px 5px 8px var(--blue-900));
   align-items: center;
   flex-wrap: wrap;
   margin-top: 50px;
-  /* background-color: red; */
 }
 
 .reviews .reviews-container .reviews-description {
@@ -227,11 +191,9 @@ filter: drop-shadow(5px 5px 8px var(--blue-900));
   margin-bottom: 30px;
   padding: 50px 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  /* border: 2px solid yellow; */
   border-radius: 6px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: var(--white-100);
-  /* border: 2px solid red; */
 }
 
 .reviews .reviews-container .reviews-description:hover {

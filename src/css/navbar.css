@@ -13,9 +13,7 @@
 }
 
 .header {
-  /* border: 2px solid red; */
   position: fixed;
-  /* top: 5%; */
   left: 1px;
   width: 100%;
   height: 80px;
@@ -26,7 +24,6 @@
   z-index: 5;
   padding: 40px 120px;
   transition: 0.3s ease;
-  /* border-radius: 4px; */
   border-radius: 4px 4px 0 0;
   transition: top 0.3s ease, backdrop-filter 0.3s ease;
 }
@@ -38,7 +35,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: red; */
   z-index: -1;
 }
 
@@ -64,14 +60,11 @@
 
 .header .navbar .active {
   color: var(--blue-600);
-  /* color: var(--blue-700); */
 }
 
 /*Navbar when scrolled*/
 .header.scrolled {
   top: 0;
-  /* background-color: transparent;
-    backdrop-filter: blur(8px); */
   background-color: var(--white-200);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -79,29 +72,6 @@
 .header.scrolled .logo{
   padding: 5px;
 }
-
-/* .header.scrolled .navbar a {
-  color: var(--blue-50);
-}
-
-.header.scrolled .navbar a:hover {
-  color: var(--blue-200);
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
-}
-
-.header.scrolled .navbar .active {
-  color: var(--blue-200);
-}
-
-.header.scrolled .hamburger,
-.header.scrolled .cart {
-  color: var(--blue-50);
-}
-
-.header.scrolled .cart:hover{
-  color: var(--blue-200);
-} */
-
 /*End Navbar when scrolled*/
 
 .header .hamburger {

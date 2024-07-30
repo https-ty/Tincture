@@ -2,8 +2,7 @@
   top: 50px;
 }
 
-.shop-product{
-  /* border: 2px solid red; */
+.shop-product {
   background-image: url(/Tincture-Ecommerce/src/images/bg/shop-bg.png);
   background-size: cover;
   background-position: center;
@@ -12,70 +11,50 @@
   height: 100%;
 }
 
-
-.shop-product h1{
-    /* border: 2px solid magenta; */
-    padding-top: 100px;
+.shop-product h1 {
+  padding-top: 100px;
 }
 
 .shop-product #page2,
-.shop-product #page3{
-    display: none;
+.shop-product #page3 {
+  display: none;
 }
 
 /* Pagination */
-/* .pagination {
-    margin-top: 20px;
-  }
-  
-  .pagination button {
-    margin: 0 5px;
-    padding: 5px 10px;
-    border: none;
-    background-color: #007BFF;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .pagination button:hover {
-    background-color: #0056b3;
-  } */
-
-  /* Pagination */
 .pagination {
-    margin-top: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .pagination button {
-    margin: 0 5px;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
-    color: var(--white-100);
-    background: var(--blue-600);
-    padding: 8px 20px;
-    transition: 0.3s ease;
-    border-radius: 5px;
-    font-family: var(--font-headers);
-    font-weight: 700;
-    font-size: 1rem;
-  }
-  
-  .pagination button:hover {
-    opacity: 80%;
-  }
-  
-  /* Arrow Buttons */
-  .arrow {
-    font-size: 1rem;
-  }
-  
-  /* Active Button Style */
-  .page-button.active {
-    background-color: var(--blue-500);
-    font-weight: bold;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  color: var(--white-100);
+  background: var(--blue-600);
+  padding: 8px 20px;
+  transition: 0.3s ease;
+  border-radius: 5px;
+  font-family: var(--font-headers);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.pagination button:hover {
+  opacity: 80%;
+}
+
+/* Arrow Buttons */
+.arrow {
+  font-size: 1rem;
+}
+
+/* Active Button Style */
+.page-button.active {
+  background-color: var(--blue-500);
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

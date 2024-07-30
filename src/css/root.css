@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-/*font-family: "Roboto", sans-serif;
-font-family: "Nunito", sans-serif;*/
-
 * {
   margin: 0;
   padding: 0;
@@ -26,13 +23,12 @@ html {
 
   /*Colors*/
   --white-100: #fefeff;
-  --white-200: #f0f2ff; 
+  --white-200: #f0f2ff;
 
-  --gray-100: #E9ECEF;
+  --gray-100: #e9ecef;
 
   /* --blue-1000: #022633; */
   --blue-1000: #000d1a;
-
   --blue-950: #033649;
   --blue-900: #105269;
   --blue-800: #0d647d;

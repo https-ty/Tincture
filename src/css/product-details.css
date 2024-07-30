@@ -3,15 +3,10 @@
 }
 
 .product-details {
-  /* border: 2px solid magenta; */
-  /* margin-top: 200px;
-  padding: 0 50px 100px; */
   padding: 0 50px 100px;
   padding-top: 200px;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-
   background-image: url(/Tincture-Ecommerce/src/images/bg/latest-product-bg..png);
   background-size: cover;
   background-position: center;
@@ -24,12 +19,10 @@
   width: 40%;
   height: 40%;
   margin-right: 50px;
-  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
   padding: 20px;
   border-radius: 25px;
   border: 1px solid var(--white-100);
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-  /* border: 2px solid blue; */
   background-color: var(--white-100);
 }
 
@@ -42,7 +35,7 @@
 .product-details .product-img .magnifier {
   position: absolute;
   border: 3px solid var(--blue-50);
-  border-radius: 0; /* Change to 0 to make it square */
+  border-radius: 0;
   width: 200px;
   height: 200px;
   display: none;
@@ -68,7 +61,6 @@
 .product-details .product-description {
   width: 50%;
   padding-top: 30px;
-  /* border: 2px solid blue; */
 }
 
 .product-details .product-description h1,

@@ -1,33 +1,28 @@
 /*Featured Product and Latest Product*/
 
-.featured-product{
+.featured-product {
   background-image: url(/Tincture-Ecommerce/src/images/bg/feature-bg.svg);
   background-size: cover;
   background-position: center;
-  /* background-position: top right; */
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
 }
 
-.latest-product{
+.latest-product {
   background-image: url(/Tincture-Ecommerce/src/images/bg/latest-product-bg..png);
   background-size: cover;
   background-position: center;
-  /* background-position: top right; */
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
 }
 
-
-
 .featured-product,
 .latest-product,
-.shop-product{
+.shop-product {
   text-align: center;
   padding: 70px 100px;
-  /* margin-bottom: 0px; */
 }
 
 .featured-product h1,
@@ -38,7 +33,6 @@
   line-height: 83px;
   margin-top: 20px;
   color: var(--blue-900);
-  /* color: var(--blue-950); */
   font-family: var(--font-headers);
 }
 
@@ -66,7 +60,7 @@
   width: 20%;
   min-width: 200px;
   padding: 10px 12px;
-  border: 1px solid #FAFAFA;
+  border: 1px solid #fafafa;
   background-color: var(--white-100);
   border-radius: 25px;
   cursor: pointer;
@@ -76,7 +70,6 @@
   transition: 0.2s ease;
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* border: 2px solid red; */
 }
 
 .latest-product .l-product,
@@ -88,7 +81,7 @@
 .latest-product .l-product:hover,
 .shop-product .s-product:hover {
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
-  transform: scale(1.05); /* Slightly increase the size */
+  transform: scale(1.05); 
 }
 
 .featured-product .f-product-container .f-product img,
@@ -97,7 +90,7 @@
   width: 100%;
   height: 260px;
   border-radius: 20px;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 .featured-product .f-product-container .f-product .description,
@@ -150,7 +143,7 @@
   border-radius: 50px;
   background-color: var(--white-100);
   color: var(--green-400);
-  border: 1px solid #FAFAFA;
+  border: 1px solid #fafafa;
   position: absolute;
   bottom: 20px;
   right: 10px;
@@ -166,11 +159,11 @@
 
 /*Sweet Alert Button*/
 .sweet-alert .confirm {
-  background-color: var(--blue-600) !important; /* Green button */
-  color: var(--white-100) !important; /* Text color */
+  background-color: var(--blue-600) !important;
+  color: var(--white-100) !important; 
 }
 
-.sweet-alert .confirm:hover{
+.sweet-alert .confirm:hover {
   opacity: 80%;
 }
 /*End Sweet Alet Button*/

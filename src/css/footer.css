@@ -1,9 +1,5 @@
 /*Footer Section*/
 .footer {
-  /* background-color: rgba(255, 255, 255, 0.8); */
-  /* background-color: rgba(143, 168, 148, 0.5); */
-  /* background-color: var(--green-300); */
-  /* background-image: url(/Tincture-Ecommerce/src/images/bg/frame_bg.png); */
   background-color: var(--blue-1000);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 40px 0 20px;
@@ -12,7 +8,6 @@
 }
 
 .footer .footer-container {
-  /* border: 2px solid red; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -25,11 +20,9 @@
 .footer-content-4 {
   min-width: 250px;
   margin-bottom: 20px;
-  /* border: 2px solid yellow; */
 }
 
 .footer .footer-container .footer-content-1 {
-  /* border: 2px solid yellow; */
   display: block;
   text-align: start;
   flex-basis: 25%;
@@ -49,7 +42,6 @@
 .footer .footer-container .footer-content-1 p,
 .footer .footer-container .footer-content-2 p {
   font-size: 1rem;
-  /* color: var(--gray-300); */
   color: var(--blue-50);
   font-family: var(--font-paragraph);
 }
@@ -70,7 +62,6 @@
 
 .footer .footer-container .footer-content-1 .app-logo img:hover {
   transform: scale(1.02);
-  /* filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)); */
 }
 
 .footer .footer-container .footer-content-2 {
@@ -89,21 +80,6 @@
   text-align: center;
 }
 
-/* .footer .footer-container .footer-content-3 ul li,
-  .footer-content-4 ul li {
-    font-size: 1rem;
-    color: var(--blue-50);
-    cursor: pointer;
-    transition: color 0.5s ease, text-decoration 0.3s ease;
-    font-family: var(--font-paragraph);
-  }
-  
-  .footer .footer-container .footer-content-3 ul li:hover,
-  .footer-content-4 ul li:hover {
-    color: var(--blue-500);
-    text-decoration: underline;
-  } */
-
 .footer .footer-container .footer-content-3 ul li,
 .footer-content-4 ul li {
   position: relative;
@@ -112,7 +88,7 @@
   cursor: pointer;
   transition: color 0.3s ease;
   font-family: var(--font-paragraph);
-  text-align: center; /* Ensure the text is centered */
+  text-align: center;
 }
 
 .footer .footer-container .footer-content-3 ul li::after,
@@ -121,7 +97,7 @@
   position: absolute;
   width: 0;
   height: 2px;
-  bottom: 0; /* Adjust the position as needed */
+  bottom: 0; 
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--blue-600);
@@ -152,6 +128,6 @@
   color: var(--blue-50);
   opacity: 80%;
   font-family: var(--font-paragraph);
-  /* font-weight: 500; */
 }
+
 /*End Footer Section*/
