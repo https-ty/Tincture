@@ -4,7 +4,7 @@
 .contact{
     padding: 140px 150px;
 
-    background-image: url(/Tincture-Ecommerce/images/bg/reviews-bg.png);
+    background-image: url(/Tincture/images/bg/reviews-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -126,7 +126,7 @@
 .contact .contact-right {
   flex-basis: 40%;
   padding: 40px;
-  background-image: url(/Tincture-Ecommerce/images/bg/contact-right-bg.png);
+  background-image: url(/Tincture/images/bg/contact-right-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
