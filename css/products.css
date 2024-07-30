@@ -1,7 +1,7 @@
 /*Featured Product and Latest Product*/
 
 .featured-product {
-  background-image: url(/Tincture-Ecommerce/src/images/bg/feature-bg.svg);
+  background-image: url(/Tincture-Ecommerce/images/bg/feature-bg.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@
 }
 
 .latest-product {
-  background-image: url(/Tincture-Ecommerce/src/images/bg/latest-product-bg..png);
+  background-image: url(/Tincture-Ecommerce/images/bg/latest-product-bg..png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
